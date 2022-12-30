@@ -1,47 +1,104 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
+    <title>Fotos</title>
+    <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+</head>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<body>
+    <!--Cabeçalho-->
+    <header id="cabecalho">
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <!--Agrupamento de Título e Sub-Título-->
+        <hgroup>
 
-Identificação do Usuário
+            <!--Título-->
+            <h1>Google Glass</h1>
+
+            <!--Sub-Título-->
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+
+        <!--Imagem do Óculos da Google-->
+        <img id="icone" src="/curso-html5-pacote01/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png" alt="">
+
+        <!--Menu-->
+        <nav id="menu">
+
+            <!--Menu Título-->
+            <h1>Menu Principal</h1>
+
+            <!--Menu Itens-->
+            <ul>
+                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')"
+                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+                    <a href="/curso-html5-pacote01/projeto-glass-html5/index.html">Home</a>
+                </li>
+                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')"
+                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+                    <a href="/curso-html5-pacote01/projeto-glass-html5/specs.html">Especificações</a>
+                </li>
+                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"
+                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+                    <a href="/curso-html5-pacote01/projeto-glass-html5/fotos.html">Fotos</a>
+                </li>
+                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"
+                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+                    <a href="/curso-html5-pacote01/projeto-glass-html5/multimidia.html">Multimídia</a>
+                </li>
+                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"
+                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+                    <a href="/curso-html5-pacote01/projeto-glass-html5/fale-conosco.html">Fale conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    Fale Conosco > Contato
+    Formulário de Contato
+    por Gustavo Guanabara
+    Atualizado em 01/Maio/2013
+
+    Identificação do Usuário
     Nome:
     Senha:
     E-mail:
     Sexo:
-        - Masculino
-        - Feminino
+    - Masculino
+    - Feminino
     Data de Nascimento:
 
-Endereço do Usuário
+    Endereço do Usuário
     Logradouro:
     Número:
     Estado:
     Cidade:
 
-Mensagem do Usuário
+    Mensagem do Usuário
     Grau de Urgência:
     Mensagem:
 
-Quero um Google Glass
+    Quero um Google Glass
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
 
 
-[BOTÃO ENVIAR]
+    [BOTÃO ENVIAR]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+    <!--Rodape-->
+    <footer id="rodape">
+        <!--Paragrafo-->
+        <p>Copyright &copy; 2013 - by Marcelo Paulino <br>
+            <a href="http://facebook.com" target="_blank">Facebook </a> |
+            <a href="http://Twitter.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
+</body>
+
+</html>

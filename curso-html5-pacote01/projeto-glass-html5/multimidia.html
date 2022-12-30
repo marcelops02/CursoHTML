@@ -1,14 +1,61 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
+    <title>Multimídia</title>
+    <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+</head>
+<body>
+    <!--Cabeçalho-->
+<header id="cabecalho">
 
-[AQUI ENTRA UMA FOTO]
+    <!--Agrupamento de Título e Sub-Título-->
+    <hgroup>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+        <!--Título-->
+        <h1>Google Glass</h1>
+
+        <!--Sub-Título-->
+        <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+    <!--Imagem do Óculos da Google-->
+    <img id="icone" src="/curso-html5-pacote01/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png" alt="">
+
+    <!--Menu-->
+    <nav id="menu">
+
+        <!--Menu Título-->
+        <h1>Menu Principal</h1>
+
+        <!--Menu Itens-->
+        <ul>
+            <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')"
+                onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')">
+                <a href="/curso-html5-pacote01/projeto-glass-html5/index.html">Home</a>
+            </li>
+            <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')"
+                onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')">
+                <a href="/curso-html5-pacote01/projeto-glass-html5/specs.html">Especificações</a>
+            </li>
+            <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"
+                onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')">
+                <a href="/curso-html5-pacote01/projeto-glass-html5/fotos.html">Fotos</a>
+            </li>
+            <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"
+                onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')">
+                <a href="/curso-html5-pacote01/projeto-glass-html5/multimidia.html">Multimídia</a>
+            </li>
+            <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"
+                onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')">
+                <a href="/curso-html5-pacote01/projeto-glass-html5/fale-conosco.html">Fale conosco</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +68,14 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<!--Rodape-->
+<footer id="rodape">
+    <!--Paragrafo-->
+    <p>Copyright &copy; 2013 - by Marcelo Paulino <br>
+        <a href="http://facebook.com" target="_blank">Facebook </a> |
+        <a href="http://Twitter.com" target="_blank">Twitter</a>
+    </p>
+</footer>
+</body>
+</html>
+
