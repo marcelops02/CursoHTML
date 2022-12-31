@@ -10,9 +10,21 @@
     <link
       rel="stylesheet"
       href="/curso-html5-pacote01/projeto-glass-html5/_css/form.css" />
+    <style>
+      input {
+        outline: none;
+      }
+    </style>
     <title>Multimídia</title>
   </head>
   <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+  <script>
+    function calc_total() {
+      var qtd = Number(document.querySelector("input#cQtd").value);
+      tot = qtd * 1500;
+      document.getElementById("cTot").value = tot;
+    }
+  </script>
   <body>
     <!--Cabeçalho-->
     <header id="cabecalho">
@@ -96,7 +108,8 @@
         <form
           method="post"
           id="fContato"
-          action="mailto:marcelops2002@gmail.com">
+          action="mailto:marcelops2002@gmail.com"
+          oninput="calc_total()">
           <fieldset id="usuario">
             <legend>Identificação do Usuário</legend>
             <p>
@@ -218,8 +231,8 @@
               <textarea
                 name="tMsg"
                 id="cMsg"
-                cols="30"
-                rows="10"
+                cols="35"
+                rows="5"
                 placeholder="Deixa aqui sua mensagem."></textarea>
             </p>
           </fieldset>
@@ -227,19 +240,40 @@
           <fieldset id="pedido">
             <legend>Quero um Google Glass</legend>
             <p>
-              <label for="cPed"
-                >Gostaria de adquirir um Google Glass quando disponível
-              </label>
+              <input type="checkbox" name="tPed" id="cPed" checked /><label
+                for="cPed"
+                >Gostaria de adquirir um Google Glass quando disponível</label
+              >
             </p>
-            <p><label for="cCor">Cor:</label></p>
+            <p>
+              <label for="cCor">Cor:</label
+              ><input type="color" name="tCor" id="cCor" value="#0000ff" />
+            </p>
             <p>
               <label for="cQtd">Quantidade:</label
-              ><input type="number" name="tQtd" id="cQtd" />
+              ><input
+                type="number"
+                name="tQtd"
+                id="cQtd"
+                min="0"
+                max="5"
+                value="0" />
             </p>
-            <p><label for="cTot">Preço Total: R$</label></p>
+            <p>
+              <label for="cTot">Preço Total: R$</label
+              ><input
+                type="text"
+                name="tTot"
+                id="cTot"
+                placeholder="Total a Pagar"
+                readonly />
+            </p>
           </fieldset>
 
-          [BOTÃO ENVIAR]
+          <input
+            type="image"
+            src="./_imagens/botao-enviar.png"
+            name="tEnviar" />
         </form>
       </article>
     </section>
