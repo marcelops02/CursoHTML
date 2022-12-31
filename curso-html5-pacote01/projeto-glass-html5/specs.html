@@ -1,81 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="/curso-html5-pacote01/projeto-glass-html5/_css/specs.css" />
     <title>Especificações</title>
-</head>
-<script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
-<body>
+  </head>
+  <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+  <body>
     <!--Cabeçalho-->
     <header id="cabecalho">
+      <!--Agrupamento de Título e Sub-Título-->
+      <hgroup>
+        <!--Título-->
+        <h1>Google Glass</h1>
 
-        <!--Agrupamento de Título e Sub-Título-->
-        <hgroup>
+        <!--Sub-Título-->
+        <h2>A revolução do Google está chegando</h2>
+      </hgroup>
 
-            <!--Título-->
-            <h1>Google Glass</h1>
+      <!--Imagem do Óculos da Google-->
+      <img
+        id="icone"
+        src="/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png"
+        alt="" />
 
-            <!--Sub-Título-->
-            <h2>A revolução do Google está chegando</h2>
-        </hgroup>
+      <!--Menu-->
+      <nav id="menu">
+        <!--Menu Título-->
+        <h1>Menu Principal</h1>
 
-        <!--Imagem do Óculos da Google-->
-        <img id="icone" src="/curso-html5-pacote01/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png" alt="">
-
-        <!--Menu-->
-        <nav id="menu">
-
-            <!--Menu Título-->
-            <h1>Menu Principal</h1>
-
-            <!--Menu Itens-->
-            <ul>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/index.html">Home</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/specs.html">Especificações</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/fotos.html">Fotos</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/multimidia.html">Multimídia</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/fale-conosco.html">Fale conosco</a>
-                </li>
-            </ul>
-        </nav>
+        <!--Menu Itens-->
+        <ul>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/index.html"
+              >Home</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/specs.html"
+              >Especificações</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/fotos.html"
+              >Fotos</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/multimidia.html"
+              >Multimídia</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')">
+            <a
+              href="/curso-html5-pacote01/projeto-glass-html5/fale-conosco.html"
+              >Fale conosco</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    Glass > Especificações
-    Raio-X no Google Glass
-    por Gustavo Guanabara
-    Atualizado em 01/Maio/2013
+    <!--Sessão principal-->
+    <section id="corpo-full">
+      <!--Artigo-->
+      <article id="noticia-principal">
+        <!--Cabeçalho do Artigo-->
+        <header id="cabecalho-artigo">
+          <!--Agrupamento de Títulos-->
+          <hgroup>
+            <h3>Glass > &nbsp; Especificações</h3>
+            <h1>Raio-X no Google Glass</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+          </hgroup>
+        </header>
 
-    Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer
-    ponto vermelho vai te levar a um lugar cheio de novas informações.
+        <p>
+          Clique em qualquer área destacada da imagem para ter mais informações
+          sobre os recursos do Google Glass. Qualquer ponto vermelho vai te
+          levar a um lugar cheio de novas informações.
+        </p>
 
-    [AQUI ENTRA UMA IMAGEM]
+        <section id="conteudo">
+          <img
+            src="/curso-html5-pacote01/projeto-glass-html5/_imagens/glass-esquema-marcado.jpg"
+            usemap="#meumapa" />
+          <map name="meumapa">
+            <area
+              shape="rect"
+              coords="179, 202, 270, 260"
+              href="/curso-html5-pacote01/projeto-glass-html5/google-glass.html#tela"
+              target="janela" />
+            <area
+              shape="circle"
+              coords="158, 243, 12"
+              href="/curso-html5-pacote01/projeto-glass-html5/google-glass.html#camera"
+              target="janela" />
+            <area
+              shape="circle"
+              coords="73, 52, 12"
+              href="/curso-html5-pacote01/projeto-glass-html5/google-glass.html#gadgets"
+              target="janela" />
+            <area
+              shape="poly"
+              coords="28, 143, 83, 216, 84, 249, 27, 169"
+              href="/curso-html5-pacote01/projeto-glass-html5/google-glass.html#sensores"
+              target="janela" />
+          </map>
+          <iframe
+            src="/curso-html5-pacote01/projeto-glass-html5/google-glass.html"
+            name="janela"
+            id="frame-spec"></iframe>
+        </section>
+      </article>
+    </section>
 
     <!--Rodape-->
     <footer id="rodape">
-        <!--Paragrafo-->
-        <p>Copyright &copy; 2013 - by Marcelo Paulino <br>
-            <a href="http://facebook.com" target="_blank">Facebook </a> |
-            <a href="http://Twitter.com" target="_blank">Twitter</a>
-        </p>
+      <!--Paragrafo-->
+      <p>
+        Copyright &copy; 2013 - by Marcelo Paulino <br />
+        <a href="http://facebook.com" target="_blank">Facebook </a> |
+        <a href="http://Twitter.com" target="_blank">Twitter</a>
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>

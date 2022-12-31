@@ -1,104 +1,256 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
-    <title>Fotos</title>
-    <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="/curso-html5-pacote01/projeto-glass-html5/_css/form.css" />
+    <title>Multimídia</title>
+  </head>
+  <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+  <body>
     <!--Cabeçalho-->
     <header id="cabecalho">
+      <!--Agrupamento de Título e Sub-Título-->
+      <hgroup>
+        <!--Título-->
+        <h1>Google Glass</h1>
 
-        <!--Agrupamento de Título e Sub-Título-->
-        <hgroup>
+        <!--Sub-Título-->
+        <h2>A revolução do Google está chegando</h2>
+      </hgroup>
 
-            <!--Título-->
-            <h1>Google Glass</h1>
+      <!--Imagem do Óculos da Google-->
+      <img
+        id="icone"
+        src="/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png"
+        alt="" />
 
-            <!--Sub-Título-->
-            <h2>A revolução do Google está chegando</h2>
-        </hgroup>
+      <!--Menu-->
+      <nav id="menu">
+        <!--Menu Título-->
+        <h1>Menu Principal</h1>
 
-        <!--Imagem do Óculos da Google-->
-        <img id="icone" src="/curso-html5-pacote01/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png" alt="">
-
-        <!--Menu-->
-        <nav id="menu">
-
-            <!--Menu Título-->
-            <h1>Menu Principal</h1>
-
-            <!--Menu Itens-->
-            <ul>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/index.html">Home</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/specs.html">Especificações</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/fotos.html">Fotos</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/multimidia.html">Multimídia</a>
-                </li>
-                <li onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"
-                    onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
-                    <a href="/curso-html5-pacote01/projeto-glass-html5/fale-conosco.html">Fale conosco</a>
-                </li>
-            </ul>
-        </nav>
+        <!--Menu Itens-->
+        <ul>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contatopng')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/index.html"
+              >Home</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contatopng')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/specs.html"
+              >Especificações</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/Fotos.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/fotos.html"
+              >Fotos</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+            <a href="/curso-html5-pacote01/projeto-glass-html5/multimidia.html"
+              >Multimídia</a
+            >
+          </li>
+          <li
+            onmouseover="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"
+            onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')">
+            <a
+              href="/curso-html5-pacote01/projeto-glass-html5/fale-conosco.html"
+              >Fale conosco</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    Fale Conosco > Contato
-    Formulário de Contato
-    por Gustavo Guanabara
-    Atualizado em 01/Maio/2013
 
-    Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-    - Masculino
-    - Feminino
-    Data de Nascimento:
+    <!--Sessão principal-->
+    <section id="corpo-full">
+      <!--Artigo-->
+      <article id="noticia-principal">
+        <!--Cabeçalho do Artigo-->
+        <header id="cabecalho-artigo">
+          <!--Agrupamento de Títulos-->
+          <hgroup>
+            <h3>fale Conosco > &nbsp; Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="direita">Atualizado em 01/maio/2013</h3>
+          </hgroup>
+        </header>
 
-    Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+        <form
+          method="post"
+          id="fContato"
+          action="mailto:marcelops2002@gmail.com">
+          <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+            <p>
+              <label for="cNome">Nome:</label>
+              <input
+                type="text"
+                name="tNome"
+                id="cNome"
+                size="20"
+                maxlength="30"
+                placeholder="Nome Completo" />
+            </p>
 
-    Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+            <p>
+              <label for="cSenha">Senha:</label>
+              <input
+                type="password"
+                name="tSenha"
+                id="cSenha"
+                placeholder="8 Dígitos"
+                size="8"
+                maxlength="8" />
+            </p>
 
-    Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+            <p>
+              <label for="cEmail">E-mail:</label>
+              <input
+                type="email"
+                name="tEmail"
+                id="cEmail"
+                size="20"
+                maxlength="40" />
+            </p>
 
+            <fieldset id="sexo">
+              <legend>Sexo</legend>
+              <input type="radio" name="tSexo" id="cMasc" />
+              <label for="cMasc">Masculino </label> <br />
+              <input type="radio" name="tSexo" id="cFem" />
+              <label for="cFem">Feminino</label>
+            </fieldset>
+            <p>
+              <label for="cNasc">Data de Nascimento:</label
+              ><input type="date" name="tNasc" id="cNasc" />
+            </p>
+          </fieldset>
 
-    [BOTÃO ENVIAR]
+          <fieldset id="endereco">
+            <legend>Endereço do Usuário</legend>
+            <p>
+              <label for="cRua">Logradouro: </label
+              ><input
+                type="text"
+                name="tRua"
+                id="cRua"
+                size="13"
+                maxlength="80"
+                placeholder="Rua, Av, Trav..." />
+            </p>
+            <p>
+              <label for="cNum">Número:</label>
+              <input
+                type="number"
+                name="tNum"
+                id="cNum"
+                min="0"
+                max="9999"
+                placeholder="Nº" />
+            </p>
+            <p>
+              <label for="cEst">Estado:</label>
+              <select name="tEst" id="cEst">
+                <optgroup label="Região Sudeste">
+                  <option value="SP">São Paulo</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                  <option value="PR">Paraná</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+              </select>
+            </p>
+            <p>
+              <label for="cCid">Cidade:</label>
+              <input
+                type="text"
+                name="tCid"
+                id="cCid"
+                size="20"
+                maxlength="40"
+                placeholder="Sua Cidade"
+                list="cidades" />
+            </p>
+            <datalist id="cidades">
+              <option value="Rio de Janeiro"></option>
+              <option value="Nova Iguaçu"></option>
+              <option value="Niterói"></option>
+              <option value="Belford Roxo"></option>
+            </datalist>
+          </fieldset>
 
+          <fieldset id="mensagem">
+            <legend>Mensagem do Usuário</legend>
+            <p>
+              <label for="cUrg">Grau de Urgência:</label>
+              Min<input
+                type="range"
+                name="tUrg"
+                id="cUrg"
+                min="0"
+                max="10"
+                step="1" />
+              Max
+            </p>
+            <p>
+              <label for="cMsg">Mensagem:</label>
+              <textarea
+                name="tMsg"
+                id="cMsg"
+                cols="30"
+                rows="10"
+                placeholder="Deixa aqui sua mensagem."></textarea>
+            </p>
+          </fieldset>
+
+          <fieldset id="pedido">
+            <legend>Quero um Google Glass</legend>
+            <p>
+              <label for="cPed"
+                >Gostaria de adquirir um Google Glass quando disponível
+              </label>
+            </p>
+            <p><label for="cCor">Cor:</label></p>
+            <p>
+              <label for="cQtd">Quantidade:</label
+              ><input type="number" name="tQtd" id="cQtd" />
+            </p>
+            <p><label for="cTot">Preço Total: R$</label></p>
+          </fieldset>
+
+          [BOTÃO ENVIAR]
+        </form>
+      </article>
+    </section>
     <!--Rodape-->
     <footer id="rodape">
-        <!--Paragrafo-->
-        <p>Copyright &copy; 2013 - by Marcelo Paulino <br>
-            <a href="http://facebook.com" target="_blank">Facebook </a> |
-            <a href="http://Twitter.com" target="_blank">Twitter</a>
-        </p>
+      <!--Paragrafo-->
+      <p>
+        Copyright &copy; 2013 - by Marcelo Paulino <br />
+        <a href="http://facebook.com" target="_blank">Facebook </a> |
+        <a href="http://Twitter.com" target="_blank">Twitter</a>
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
